@@ -13,9 +13,11 @@
 		18726C6D28A6E7C000FCE346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18726C6B28A6E7C000FCE346 /* Main.storyboard */; };
 		18726C6F28A6E7C200FCE346 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18726C6E28A6E7C200FCE346 /* Assets.xcassets */; };
 		18726C7228A6E7C200FCE346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18726C7028A6E7C200FCE346 /* LaunchScreen.storyboard */; };
+		F2A18F92276B884F58E49752 /* Pods_vvv124.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B522F90BD0FCCB731852135 /* Pods_vvv124.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B522F90BD0FCCB731852135 /* Pods_vvv124.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vvv124.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18726C6228A6E7C000FCE346 /* vvv124.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vvv124.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18726C6528A6E7C000FCE346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18726C6728A6E7C000FCE346 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		18726C6E28A6E7C200FCE346 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18726C7128A6E7C200FCE346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18726C7328A6E7C200FCE346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		231934182A9CD31C873DE9DA /* Pods-vvv124.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vvv124.release.xcconfig"; path = "Target Support Files/Pods-vvv124/Pods-vvv124.release.xcconfig"; sourceTree = "<group>"; };
+		CBFB05A31F0788DA7A343EC5 /* Pods-vvv124.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vvv124.debug.xcconfig"; path = "Target Support Files/Pods-vvv124/Pods-vvv124.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A18F92276B884F58E49752 /* Pods_vvv124.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00636E4F6D348E5620B9A829 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B522F90BD0FCCB731852135 /* Pods_vvv124.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		18726C5928A6E7C000FCE346 = {
 			isa = PBXGroup;
 			children = (
 				18726C6428A6E7C000FCE346 /* vvv124 */,
 				18726C6328A6E7C000FCE346 /* Products */,
+				93F6FB75F006328E86A3997D /* Pods */,
+				00636E4F6D348E5620B9A829 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = vvv124;
 			sourceTree = "<group>";
 		};
+		93F6FB75F006328E86A3997D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBFB05A31F0788DA7A343EC5 /* Pods-vvv124.debug.xcconfig */,
+				231934182A9CD31C873DE9DA /* Pods-vvv124.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18726C7628A6E7C200FCE346 /* Build configuration list for PBXNativeTarget "vvv124" */;
 			buildPhases = (
+				7056B063DD93AA9C81E83353 /* [CP] Check Pods Manifest.lock */,
 				18726C5E28A6E7C000FCE346 /* Sources */,
 				18726C5F28A6E7C000FCE346 /* Frameworks */,
 				18726C6028A6E7C000FCE346 /* Resources */,
+				A1EBD8E6D404B8A4F4180184 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7056B063DD93AA9C81E83353 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vvv124-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1EBD8E6D404B8A4F4180184 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vvv124/Pods-vvv124-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vvv124/Pods-vvv124-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vvv124/Pods-vvv124-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18726C5E28A6E7C000FCE346 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		18726C7728A6E7C200FCE346 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBFB05A31F0788DA7A343EC5 /* Pods-vvv124.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		18726C7828A6E7C200FCE346 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 231934182A9CD31C873DE9DA /* Pods-vvv124.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
